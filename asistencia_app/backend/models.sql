@@ -1,0 +1,2 @@
+-- models.sql - esquema de la base de datos (placeholder)
+-- Crea tablas aquí
