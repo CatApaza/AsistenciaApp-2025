@@ -1,13 +1,11 @@
 import psycopg2
-from psycopg2.extras import RealDictCursor
+import psycopg2.extras
 
 def get_connection():
     return psycopg2.connect(
-        dbname="asistencia_db",
-        user="postgres",
-        password="71500100",  # 👈 cambia aquí
         host="localhost",
-        port="5432",
-        cursor_factory=RealDictCursor
+        database="asistencia_db",
+        user="postgres",       # <-- cambia según tu usuario
+        password="71500100", # <-- cambia según tu password
+        cursor_factory=psycopg2.extras.RealDictCursor
     )
-

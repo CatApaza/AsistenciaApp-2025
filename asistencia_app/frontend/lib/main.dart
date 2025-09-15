@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
+import 'screens/registro_screen.dart';
 import 'screens/login_screen.dart';
 
 void main() {
-  runApp(AsistenciaApp());
+  runApp(MyApp());
 }
 
-class AsistenciaApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Asistencia App',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: LoginScreen(),
+      title: "Asistencia App",
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: RegistroScreen(), // o LoginScreen()
     );
   }
 }
